@@ -1,29 +1,4 @@
 .header {
-    
-    font-size: 1.4rem;
-    height: 7rem;
-    background-color: #fff;
-    border-bottom: var(--line);
-    display: flex;
-    // Align in main axis: X
-    justify-content: space-between;
-
-    // Align in cross axis: Y
-    align-items: center;
-
-    @include respond(small-2) {
-        // This code lets flex items to occupy new line if there is not enough space.
-        flex-wrap: wrap;
-        // This code changes the vertical distance between flex items.
-        justify-content: space-between;
-        height: 11rem;
-    }
-   
-}
-
-.logo {
-    height: 4rem;
-    transform: translateY(-.75rem);
-    
-    margin-left: 2rem;
+    background-color: palevioletred;
+     grid-column: full-start / col-end 6;
 }

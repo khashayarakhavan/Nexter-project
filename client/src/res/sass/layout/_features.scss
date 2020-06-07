@@ -1,0 +1,12 @@
+.features {
+    
+    grid-column: center-start / center-end;
+    grid-gap: 6rem;
+    margin: 15rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.feature {
+
+}

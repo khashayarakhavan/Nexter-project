@@ -1,4 +1,3 @@
-@import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/variables";
 @import "base/utilities";
@@ -10,6 +9,7 @@
 @import "components/small-components";
 @import "components/headerProfile";
 @import "components/searchBar";
+@import "layout/realtors";
 
 @import "components/gallery-hotel";
 @import "layout/overview";
@@ -21,16 +21,22 @@
 @import "components/button-changing";
 @import "layout/grid-hotel-details";
 @import "components/recommend-friends";
+@import "layout/homes";
+@import "layout/gallery";
+@import "layout/features";
+
+@import "components/recommend-friends";
+
 // @import "pages/home";
 // @import "components/button";
 // @import "components/composition";
 // @import "components/feature-box";
 // @import "components/card";
-// @import "components/story";
+@import "components/story";
 // @import "components/bg-video";
 // @import "components/form";
 // @import "components/popup";
 
 @import "layout/navigation";
 // @import "layout/grid";
-// @import "layout/footer";
+@import "layout/footer";

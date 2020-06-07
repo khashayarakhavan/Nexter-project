@@ -14,22 +14,22 @@ html {
     
     // Default CSS: 1200px < viewport width < 1600px
 
-    @include respond(large-2) {
-        font-size: 56.25%; /* 9px */
-    }
+    // @include respond(large-2) {
+    //     font-size: 56.25%; /* 9px */
+    // }
 
-    @include respond(medium-2) {
-        font-size: 50%; /* 8px */
-    }
+    // @include respond(medium-2) {
+    //     font-size: 50%; /* 8px */
+    // }
 
 }
 
 body {
-    background-image: linear-gradient(to right bottom, var(--color-primary-light),  var(--color-primary-dark));
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-
+    font-family: $font-primary;
+    color: $color-grey-dark-2;
+    font-weight: 300;
+    line-height: 1.6;
+    
 }
 
 ::selection {
