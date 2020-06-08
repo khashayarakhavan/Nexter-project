@@ -67,7 +67,7 @@ ORDER: Base + Typography > General layout + Grid > Page layout > Components
 
 .container {
   display: grid;
-  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-rows: 80vh min-content min-content 40vh repeat(3, min-content);
   grid-template-columns: [sidebar-start] 12rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 12rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
 .sidebar {
@@ -495,6 +495,17 @@ body {
     .heading-tertiary .paragraph:not(:last-child) {
       margin-bottom: 3rem; }
 
+.heading-1, .heading-2, .heading-3, .heading-4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400; }
+
+.heading-4 {
+  font-size: 1.9rem; }
+  .heading-4--light {
+    color: #f9f7f6; }
+  .heading-4--dark {
+    color: #54483A; }
+
 .btn-changing {
   font-size: 1.5rem;
   border: none;
@@ -607,10 +618,59 @@ body {
 
 .features {
   grid-column: center-start / center-end;
-  grid-gap: 6rem;
   margin: 15rem 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+  grid-gap: 6rem;
+  align-items: start;
+  justify-content: stretch; }
+
+.feature {
+  align-self: stretch;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: minmax(6rem, min-content);
+  align-items: start;
+  background-color: rgba(182, 125, 144, 0.015);
+  grid-row-gap: 0rem;
+  grid-column-gap: 2rem;
+  line-height: 1.5; }
+  .feature__icon {
+    fill: #c69963;
+    width: 4.5rem;
+    height: 4.5rem;
+    grid-row: 1/ span 2;
+    transform: translateY(-1rem);
+    align-self: start; }
+  .feature__text {
+    font-size: 1.7rem;
+    align-self: start; }
+
+.features-2 {
+  grid-column: center-start / center-end;
+  margin: 0rem 0;
+  height: min-content;
+  border-top: 5px solid grey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+
+.feature-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  background-color: rgba(182, 125, 144, 0.025);
+  border-radius: 50%; }
+  .feature-2__icon {
+    margin: .5rem;
+    width: 4rem;
+    height: 4rem;
+    fill: #c69963; }
 
 .recommend {
   display: flex;

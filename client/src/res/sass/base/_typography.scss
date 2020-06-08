@@ -62,11 +62,33 @@ body {
     font-weight: 700;
     text-transform: uppercase;
 
-.paragraph {
-    font-size: $default-font-size;
+    .paragraph {
+        font-size: $default-font-size;
 
-    &:not(:last-child) {
-        margin-bottom: 3rem;
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
     }
 }
+
+%heading {
+    font-family: $font-display;
+    font-weight: 400;
+}
+
+.heading-1 {
+    @extend %heading;
+}
+.heading-2 {
+    @extend %heading;
+}
+.heading-3 {
+    @extend %heading;
+}
+.heading-4 {
+    @extend %heading;
+    font-size: 1.9rem;
+
+    &--light { color: $color-grey-light-1; }
+    &--dark { color: $color-grey-dark-1; }
 }

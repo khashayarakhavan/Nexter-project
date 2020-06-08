@@ -31,7 +31,9 @@ class App extends Component {
                 <svg className="feature__icon">
                   <use href={sprite + "#icon-global"} />
                 </svg>
-                <h4 className="heading-4">World's best luxury homes</h4>
+                <h4 className="heading-4 heading-4--dark">
+                  World's best luxury homes
+                </h4>
                 <p className="feature__text">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Tenetur distinctio necessitatibus pariatur voluptatibus.
@@ -41,7 +43,9 @@ class App extends Component {
                 <svg className="feature__icon">
                   <use href={sprite + "#icon-trophy"} />
                 </svg>
-                <h4 className="heading-4">only the best propreties</h4>
+                <h4 className="heading-4 heading-4--dark">
+                  only the best propreties
+                </h4>
                 <p className="feature__text">
                   Voluptatum mollitia quae. Vero ipsum sapiente molestias
                   accusamus rerum sed a eligendi aut quia.
@@ -51,7 +55,9 @@ class App extends Component {
                 <svg className="feature__icon">
                   <use href={sprite + "#icon-map-pin"} />
                 </svg>
-                <h4 className="heading-4">All homes in top locations</h4>
+                <h4 className="heading-4 heading-4--dark">
+                  All homes in top locations
+                </h4>
                 <p className="feature__text">
                   Tenetur distinctio necessitatibus pariatur voluptatibus quidem
                   consequatur harum.
@@ -61,7 +67,9 @@ class App extends Component {
                 <svg className="feature__icon">
                   <use href={sprite + "#icon-key"} />
                 </svg>
-                <h4 className="heading-4">new home in one week</h4>
+                <h4 className="heading-4 heading-4--dark">
+                  new home in one week
+                </h4>
                 <p className="feature__text">
                   Vero ipsum sapiente molestias accusamus rerum. Lorem, ipsum
                   dolor sit amet consectetur adipisicing elit.
@@ -71,7 +79,7 @@ class App extends Component {
                 <svg className="feature__icon">
                   <use href={sprite + "#icon-presentation"} />
                 </svg>
-                <h4 className="heading-4">top realtors</h4>
+                <h4 className="heading-4 heading-4--dark">top realtors</h4>
                 <p className="feature__text">
                   Quidem consequatur harum, voluptatum mollitia quae. Tenetur
                   distinctio necessitatibus pariatur voluptatibus.
@@ -81,12 +89,99 @@ class App extends Component {
                 <svg className="feature__icon">
                   <use href={sprite + "#icon-lock"} />
                 </svg>
-                <h4 className="heading-4">secure payments on Nexter</h4>
+                <h4 className="heading-4 heading-4--dark">
+                  secure payments on Nexter
+                </h4>
                 <p className="feature__text">
                   Pariatur voluptatibus quidem consequatur harum, voluptatum
                   mollitia quae.
                 </p>
               </div>
+            </section>
+
+            <section className="features-2">
+              
+              <div className="feature-2">
+                <svg className="feature-2__icon">
+                  <use href={sprite + "#icon-global"} />
+                </svg>
+              </div>
+              <div className="feature-2">
+                <svg className="feature-2__icon">
+                  <use href={sprite + "#icon-trophy"} />
+                </svg>
+              </div>
+              <div className="feature-2">
+                <svg className="feature-2__icon">
+                  <use href={sprite + "#icon-presentation"} />
+                </svg>
+              </div>
+              <div className="feature-2">
+                <svg className="feature-2__icon">
+                  <use href={sprite + "#icon-map-pin"} />
+                </svg>
+              </div>
+              <div className="feature-2">
+                <svg className="feature-2__icon">
+                  <use href={sprite + "#icon-key"} />
+                </svg>
+              </div>
+              <div className="feature-2">
+                <svg className="feature-2__icon">
+                  <use href={sprite + "#icon-global"} />
+                </svg>
+              </div>
+              <div className="feature-2">
+                <svg className="feature-2__icon">
+                  <use href={sprite + "#icon-trophy"} />
+                </svg>
+              </div>
+              <div className="feature-2">
+                <svg className="feature-2__icon">
+                  <use href={sprite + "#icon-presentation"} />
+                </svg>
+              </div>
+              <div className="feature-2">
+                <svg className="feature-2__icon">
+                  <use href={sprite + "#icon-map-pin"} />
+                </svg>
+              </div>
+              <div className="feature-2">
+                <svg className="feature-2__icon">
+                  <use href={sprite + "#icon-key"} />
+                </svg>
+              </div>
+              <div className="feature-2">
+                <svg className="feature-2__icon">
+                  <use href={sprite + "#icon-global"} />
+                </svg>
+              </div>
+              <div className="feature-2">
+                <svg className="feature-2__icon">
+                  <use href={sprite + "#icon-trophy"} />
+                </svg>
+              </div>
+              <div className="feature-2">
+                <svg className="feature-2__icon">
+                  <use href={sprite + "#icon-presentation"} />
+                </svg>
+              </div>
+              <div className="feature-2">
+                <svg className="feature-2__icon">
+                  <use href={sprite + "#icon-presentation"} />
+                </svg>
+              </div>
+              <div className="feature-2">
+                <svg className="feature-2__icon">
+                  <use href={sprite + "#icon-map-pin"} />
+                </svg>
+              </div>
+              <div className="feature-2">
+                <svg className="feature-2__icon">
+                  <use href={sprite + "#icon-key"} />
+                </svg>
+              </div>
+            
             </section>
 
             <div className="story__pictures">Story pictures</div>
