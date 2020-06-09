@@ -4,7 +4,7 @@ import sprite from "../../res/img/sprite.svg";
 const Template = () => {
     return (
         <div className="sidebar">
-           sidebar
+           <button className="nav-btn"></button>   
         </div>
     );
 };

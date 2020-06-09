@@ -4,6 +4,23 @@ import { connect } from 'react-redux';
 import * as actions from './actions';
 import sprite from "./res/img/sprite.svg";
 
+import story1 from "./res/img/story-1.jpeg";
+import house1 from "./res/img/house-1.jpeg";
+import house2 from "./res/img/house-2.jpeg";
+import house3 from "./res/img/house-3.jpeg";
+import house4 from "./res/img/house-4.jpeg";
+import house5 from "./res/img/house-5.jpeg";
+import house6 from "./res/img/house-6.jpeg";
+import house7 from "./res/img/house-1.jpeg";
+import house8 from "./res/img/house-2.jpeg";
+import house9 from "./res/img/house-3.jpeg";
+import house10 from "./res/img/house-4.jpeg";
+import house11 from "./res/img/house-5.jpeg";
+import house12 from "./res/img/house-3.jpeg";
+import house13 from "./res/img/house-2.jpeg";
+import house14 from "./res/img/house-1.jpeg";
+import story2 from "./res/img/story-2.jpeg";
+
 import Header from './components/Dynamic/Header';
 import SideNav from './components/Dynamic/SideNav';
 import HotelView from './components/Dynamic/HotelView';
@@ -184,15 +201,280 @@ class App extends Component {
             
             </section>
 
-            <div className="story__pictures">Story pictures</div>
+            <div className="story__pictures">
+              <img src={story1} alt="new house" className="story__img--1"/>
+              <img src={story2} alt="new house" className="story__img--2" />
+              
+            </div>
 
-            <div className="story__content">Story content</div>
+            <div className="story__content">
+            <h3 className="heading-3 u-margin-bottom-small">Happy Customers</h3>
+              <h2 className="heading-2 heading-2-dark u-margin-bottom-medium">&ldquo;The best decision&rdquo;</h2>  
+            <p className="story__text">
+                Quidem consequatur harum, voluptatum mollitia quae. Tenetur
+                distinctio necessitatibus pariatur voluptatibus.
+            </p>
+            <button className="btn">Find your home</button>
+            </div>
 
-            <section className="homes">Home</section>
+            <section className="homes">
+              <div className="home">
+                <img src={house1} alt="family house" className="home__img"/>
+                <svg className="home__like">
+                  <use href={sprite + "#icon-heart-full"} />
+                </svg>
+                <h5 className="home__name">Beautiful family house</h5>
+                <div className="home__location u-margin-top-small ">
+                  <svg>
+                    <use href={sprite + "#icon-map-pin"} />
+                  </svg>
+                  <p>USA</p>
+                </div>
+                <div className="home__rooms u-margin-top-small ">
+                  <svg>
+                    <use href={sprite + "#icon-profile-male"} />
+                  </svg>
+                  <p>5 rooms</p>
+                </div>
+                <div className="home__area">
+                  <svg>
+                    <use href={sprite + "#icon-expand"} />
+                  </svg>
+                  <p>325 m<sup>2</sup></p>
+                </div>
+                <div className="home__price">
+                  <svg>
+                    <use href={sprite + "#icon-key"} />
+                  </svg>
+                  <p>$1,200,000</p>
+                </div>
+                <button className="btn home__btn">Contact us</button>
+  
+              </div>
+              
+              <div className="home">
+                <img src={house2} alt="family house" className="home__img" />
+                <svg className="home__like">
+                  <use href={sprite + "#icon-heart-full"} />
+                </svg>
+                <h5 className="home__name">Beautiful family house</h5>
+                <div className="home__location">
+                  <svg>
+                    <use href={sprite + "#icon-map-pin"} />
+                  </svg>
+                  <p>USA</p>
+                </div>
+                <div className="home__rooms">
+                  <svg>
+                    <use href={sprite + "#icon-profile-male"} />
+                  </svg>
+                  <p>5 rooms</p>
+                </div>
+                <div className="home__area">
+                  <svg>
+                    <use href={sprite + "#icon-expand"} />
+                  </svg>
+                  <p>325 m<sup>2</sup></p>
+                </div>
+                <div className="home__price">
+                  <svg>
+                    <use href={sprite + "#icon-key"} />
+                  </svg>
+                  <p>$1,200,000</p>
+                </div>
+                <button className="btn home__btn">Contact us</button>
+              </div>
 
-            <section className="gallery">Gallery</section>
+              <div className="home">
+                <img src={house3} alt="family house" className="home__img" />
+                <svg className="home__like">
+                  <use href={sprite + "#icon-heart-full"} />
+                </svg>
+                <h5 className="home__name">Beautiful family house</h5>
+                <div className="home__location">
+                  <svg>
+                    <use href={sprite + "#icon-map-pin"} />
+                  </svg>
+                  <p>USA</p>
+                </div>
+                <div className="home__rooms">
+                  <svg>
+                    <use href={sprite + "#icon-profile-male"} />
+                  </svg>
+                  <p>5 rooms</p>
+                </div>
+                <div className="home__area">
+                  <svg>
+                    <use href={sprite + "#icon-expand"} />
+                  </svg>
+                  <p>325 m<sup>2</sup></p>
+                </div>
+                <div className="home__price">
+                  <svg>
+                    <use href={sprite + "#icon-key"} />
+                  </svg>
+                  <p>$1,200,000</p>
+                </div>
+                <button className="btn home__btn">Contact us</button>
+              </div>
 
-            <footer className="footer">Footer</footer>
+              <div className="home">
+                <img src={house4} alt="family house" className="home__img" />
+                <svg className="home__like">
+                  <use href={sprite + "#icon-heart-full"} />
+                </svg>
+                <h5 className="home__name">Beautiful family house</h5>
+                <div className="home__location">
+                  <svg>
+                    <use href={sprite + "#icon-map-pin"} />
+                  </svg>
+                  <p>USA</p>
+                </div>
+                <div className="home__rooms">
+                  <svg>
+                    <use href={sprite + "#icon-profile-male"} />
+                  </svg>
+                  <p>5 rooms</p>
+                </div>
+                <div className="home__area">
+                  <svg>
+                    <use href={sprite + "#icon-expand"} />
+                  </svg>
+                  <p>325 m<sup>2</sup></p>
+                </div>
+                <div className="home__price">
+                  <svg>
+                    <use href={sprite + "#icon-key"} />
+                  </svg>
+                  <p>$1,200,000</p>
+                </div>
+                <button className="btn home__btn">Contact us</button>
+              </div>
+
+              <div className="home">
+                <img src={house5} alt="family house" className="home__img" />
+                <svg className="home__like">
+                  <use href={sprite + "#icon-heart-full"} />
+                </svg>
+                <h5 className="home__name">Beautiful family house</h5>
+                <div className="home__location">
+                  <svg>
+                    <use href={sprite + "#icon-map-pin"} />
+                  </svg>
+                  <p>USA</p>
+                </div>
+                <div className="home__rooms">
+                  <svg>
+                    <use href={sprite + "#icon-profile-male"} />
+                  </svg>
+                  <p>5 rooms</p>
+                </div>
+                <div className="home__area">
+                  <svg>
+                    <use href={sprite + "#icon-expand"} />
+                  </svg>
+                  <p>325 m<sup>2</sup></p>
+                </div>
+                <div className="home__price">
+                  <svg>
+                    <use href={sprite + "#icon-key"} />
+                  </svg>
+                  <p>$1,200,000</p>
+                </div>
+                <button className="btn home__btn">Contact us</button>
+              </div>
+
+              <div className="home">
+                <img src={house6} alt="family house" className="home__img" />
+                <svg className="home__like">
+                  <use href={sprite + "#icon-heart-full"} />
+                </svg>
+                <h5 className="home__name">Beautiful family house</h5>
+                <div className="home__location">
+                  <svg>
+                    <use href={sprite + "#icon-map-pin"} />
+                  </svg>
+                  <p>USA</p>
+                </div>
+                <div className="home__rooms">
+                  <svg>
+                    <use href={sprite + "#icon-profile-male"} />
+                  </svg>
+                  <p>5 rooms</p>
+                </div>
+                <div className="home__area">
+                  <svg>
+                    <use href={sprite + "#icon-expand"} />
+                  </svg>
+                  <p>325 m<sup>2</sup></p>
+                </div>
+                <div className="home__price">
+                  <svg>
+                    <use href={sprite + "#icon-key"} />
+                  </svg>
+                  <p>$1,200,000</p>
+                </div>
+                <button className="btn home__btn">Contact us</button>
+              </div>
+            </section>
+
+            <section className="gallery">
+              <figure className="gallery__item gallery__item--1">
+                <img src={house1} alt="Gallery image 1" className="gallery__img"/>
+              </figure>
+              <figure className="gallery__item gallery__item--2">
+                <img src={house2} alt="Gallery image 2" className="gallery__img"/>
+              </figure>
+              <figure className="gallery__item gallery__item--3">
+                <img src={house3} alt="Gallery image 3" className="gallery__img"/>
+              </figure>
+              <figure className="gallery__item gallery__item--4">
+                <img src={house4} alt="Gallery image 4" className="gallery__img"/>
+              </figure>
+              <figure className="gallery__item gallery__item--5">
+                <img src={house5} alt="Gallery image 5" className="gallery__img"/>
+              </figure>
+              <figure className="gallery__item gallery__item--6">
+                <img src={house6} alt="Gallery image 6" className="gallery__img"/>
+              </figure>
+              <figure className="gallery__item gallery__item--7">
+                <img src={house7} alt="Gallery image 7" className="gallery__img"/>
+              </figure>
+              <figure className="gallery__item gallery__item--8">
+                <img src={house8} alt="Gallery image 8" className="gallery__img"/>
+              </figure>
+              <figure className="gallery__item gallery__item--9">
+                <img src={house9} alt="Gallery image 9" className="gallery__img"/>
+              </figure>
+              <figure className="gallery__item gallery__item--10">
+                <img src={house10} alt="Gallery image 10" className="gallery__img"/>
+              </figure>
+              <figure className="gallery__item gallery__item--11">
+                <img src={house11} alt="Gallery image 11" className="gallery__img"/>
+              </figure>
+              <figure className="gallery__item gallery__item--12">
+                <img src={house12} alt="Gallery image 12" className="gallery__img"/>
+              </figure>
+              <figure className="gallery__item gallery__item--13">
+                <img src={house13} alt="Gallery image 13" className="gallery__img"/>
+              </figure>
+              <figure className="gallery__item gallery__item--14">
+                <img src={house14} alt="Gallery image 14" className="gallery__img"/>
+              </figure>
+            </section>
+
+            <footer className="footer">
+              <ul className="nav">
+                <li className="nav__item"><a href="#" className="nav__link">Find your dream home 1</a></li>
+                <li className="nav__item"><a href="#" className="nav__link">Find your dream home 2</a></li>
+                <li className="nav__item"><a href="#" className="nav__link">Find your dream home 3</a></li>
+                <li className="nav__item"><a href="#" className="nav__link">Find your dream home 4</a></li>
+                <li className="nav__item"><a href="#" className="nav__link">Find your dream home 5</a></li>
+              </ul>
+              <p className="copyright">
+                &copy; Copyright 2020 by aftoflBig5
+              </p>
+            </footer>
             {/* <Header />
             <Route exact path="/"   component={Landing} />
             <Route exact path="/surveys"  component={Dashboard} />

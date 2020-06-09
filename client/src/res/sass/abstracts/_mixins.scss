@@ -6,6 +6,23 @@
     }
 }
 
+@mixin btn-flat {
+    &,
+    &:link,
+    &:visited {
+        background-color: $color-primary;
+        color: #fff;
+        border: none;
+        border-radius: 0;
+        font-family: $font-display;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        padding: 1.8rem 3rem;
+        cursor: pointer;
+        transition: all .3s;
+    }
+}
+
 @mixin centerAll {
      position: absolute;
         top: 50%;
