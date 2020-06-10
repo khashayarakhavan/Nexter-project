@@ -20,7 +20,15 @@
         padding: 1.8rem 3rem;
         cursor: pointer;
         transition: all .3s;
+        
     }
+
+    &:hover {
+        filter: brightness(130%);   
+        color: rgba(black, 0.55);
+        
+    }
+
 }
 
 @mixin centerAll {

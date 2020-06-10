@@ -19,6 +19,12 @@ import house11 from "./res/img/house-5.jpeg";
 import house12 from "./res/img/house-3.jpeg";
 import house13 from "./res/img/house-2.jpeg";
 import house14 from "./res/img/house-1.jpeg";
+import logo from "./res/img/logo.png";
+import logoBbc from "./res/img/logo-bbc.png";
+import logoForbes from "./res/img/logo-forbes.png";
+import logoTech from "./res/img/logo-techcrunch.png";
+import logoBi from "./res/img/logo-bi.png";
+
 import story2 from "./res/img/story-2.jpeg";
 
 import Header from './components/Dynamic/Header';
@@ -39,9 +45,42 @@ class App extends Component {
         <BrowserRouter>
           <div className="container">
             <SideNav />
-            <header className="header">header</header>
+            <header className="header">
+              <img src={logo} alt="logo" className="header__logo" />
+              <h3 className="heading-3">Your own home</h3>
+              <h1 className="heading-1">BIGGEST HEADER</h1>
+              <button className="btn header__btn">View more</button>
+              <div className="header__seenon-text">Seen on</div>
+              <div className="header__seenon-logos">
+                <img src={logoBbc} alt="" />
+                <img src={logoBi} alt="" />
+                <img src={logoForbes} alt="" />
+                <img src={logoTech} alt="" />
+              </div>
+            </header>
 
-            <div class="realtors">Top 3 realtors</div>
+            <div class="realtors">
+              <h3 className="heading-3">Top 3 realtors</h3>
+              <div className="realtors__list">
+                <img src={house1} alt="" className="realtors__img" />
+                <div className="realtors__details">
+                  <h4 className="heading-4 heading-4--light">AftoflBig5</h4>
+                  <p className="realtors__sold">55555 sold</p>
+                </div>
+
+                <img src={house2} alt="" className="realtors__img" />
+                <div className="realtors__details">
+                  <h4 className="heading-4 heading-4--light">AftoflBig5</h4>
+                  <p className="realtors__sold">55555 sold</p>
+                </div>
+
+                <img src={logo} alt="" className="realtors__img" />
+                <div className="realtors__details">
+                  <h4 className="heading-4 heading-4--light">AftoflBig5</h4>
+                  <p className="realtors__sold">55555 sold</p>
+                </div>
+              </div>
+            </div>
 
             <section className="features">
               <div className="feature">
@@ -117,7 +156,6 @@ class App extends Component {
             </section>
 
             <section className="features-2 u-margin-bottom-medium">
-              
               <div className="feature-2">
                 <svg className="feature-2__icon">
                   <use href={sprite + "#icon-global"} />
@@ -198,28 +236,30 @@ class App extends Component {
                   <use href={sprite + "#icon-key"} />
                 </svg>
               </div>
-            
             </section>
 
             <div className="story__pictures">
-              <img src={story1} alt="new house" className="story__img--1"/>
+              <img src={story1} alt="new house" className="story__img--1" />
               <img src={story2} alt="new house" className="story__img--2" />
-              
             </div>
 
             <div className="story__content">
-            <h3 className="heading-3 u-margin-bottom-small">Happy Customers</h3>
-              <h2 className="heading-2 heading-2-dark u-margin-bottom-medium">&ldquo;The best decision&rdquo;</h2>  
-            <p className="story__text">
+              <h3 className="heading-3 u-margin-bottom-small">
+                Happy Customers
+              </h3>
+              <h2 className="heading-2 heading-2-dark u-margin-bottom-medium">
+                &ldquo;The best decision&rdquo;
+              </h2>
+              <p className="story__text">
                 Quidem consequatur harum, voluptatum mollitia quae. Tenetur
                 distinctio necessitatibus pariatur voluptatibus.
-            </p>
-            <button className="btn">Find your home</button>
+              </p>
+              <button className="btn">Find your home</button>
             </div>
 
             <section className="homes">
               <div className="home">
-                <img src={house1} alt="family house" className="home__img"/>
+                <img src={house1} alt="family house" className="home__img" />
                 <svg className="home__like">
                   <use href={sprite + "#icon-heart-full"} />
                 </svg>
@@ -240,7 +280,9 @@ class App extends Component {
                   <svg>
                     <use href={sprite + "#icon-expand"} />
                   </svg>
-                  <p>325 m<sup>2</sup></p>
+                  <p>
+                    325 m<sup>2</sup>
+                  </p>
                 </div>
                 <div className="home__price">
                   <svg>
@@ -249,9 +291,8 @@ class App extends Component {
                   <p>$1,200,000</p>
                 </div>
                 <button className="btn home__btn">Contact us</button>
-  
               </div>
-              
+
               <div className="home">
                 <img src={house2} alt="family house" className="home__img" />
                 <svg className="home__like">
@@ -274,7 +315,9 @@ class App extends Component {
                   <svg>
                     <use href={sprite + "#icon-expand"} />
                   </svg>
-                  <p>325 m<sup>2</sup></p>
+                  <p>
+                    325 m<sup>2</sup>
+                  </p>
                 </div>
                 <div className="home__price">
                   <svg>
@@ -307,7 +350,9 @@ class App extends Component {
                   <svg>
                     <use href={sprite + "#icon-expand"} />
                   </svg>
-                  <p>325 m<sup>2</sup></p>
+                  <p>
+                    325 m<sup>2</sup>
+                  </p>
                 </div>
                 <div className="home__price">
                   <svg>
@@ -340,7 +385,9 @@ class App extends Component {
                   <svg>
                     <use href={sprite + "#icon-expand"} />
                   </svg>
-                  <p>325 m<sup>2</sup></p>
+                  <p>
+                    325 m<sup>2</sup>
+                  </p>
                 </div>
                 <div className="home__price">
                   <svg>
@@ -373,7 +420,9 @@ class App extends Component {
                   <svg>
                     <use href={sprite + "#icon-expand"} />
                   </svg>
-                  <p>325 m<sup>2</sup></p>
+                  <p>
+                    325 m<sup>2</sup>
+                  </p>
                 </div>
                 <div className="home__price">
                   <svg>
@@ -406,7 +455,9 @@ class App extends Component {
                   <svg>
                     <use href={sprite + "#icon-expand"} />
                   </svg>
-                  <p>325 m<sup>2</sup></p>
+                  <p>
+                    325 m<sup>2</sup>
+                  </p>
                 </div>
                 <div className="home__price">
                   <svg>
@@ -420,60 +471,134 @@ class App extends Component {
 
             <section className="gallery">
               <figure className="gallery__item gallery__item--1">
-                <img src={house1} alt="Gallery image 1" className="gallery__img"/>
+                <img
+                  src={house1}
+                  alt="Gallery image 1"
+                  className="gallery__img"
+                />
               </figure>
               <figure className="gallery__item gallery__item--2">
-                <img src={house2} alt="Gallery image 2" className="gallery__img"/>
+                <img
+                  src={house2}
+                  alt="Gallery image 2"
+                  className="gallery__img"
+                />
               </figure>
               <figure className="gallery__item gallery__item--3">
-                <img src={house3} alt="Gallery image 3" className="gallery__img"/>
+                <img
+                  src={house3}
+                  alt="Gallery image 3"
+                  className="gallery__img"
+                />
               </figure>
               <figure className="gallery__item gallery__item--4">
-                <img src={house4} alt="Gallery image 4" className="gallery__img"/>
+                <img
+                  src={house4}
+                  alt="Gallery image 4"
+                  className="gallery__img"
+                />
               </figure>
               <figure className="gallery__item gallery__item--5">
-                <img src={house5} alt="Gallery image 5" className="gallery__img"/>
+                <img
+                  src={house5}
+                  alt="Gallery image 5"
+                  className="gallery__img"
+                />
               </figure>
               <figure className="gallery__item gallery__item--6">
-                <img src={house6} alt="Gallery image 6" className="gallery__img"/>
+                <img
+                  src={house6}
+                  alt="Gallery image 6"
+                  className="gallery__img"
+                />
               </figure>
               <figure className="gallery__item gallery__item--7">
-                <img src={house7} alt="Gallery image 7" className="gallery__img"/>
+                <img
+                  src={house7}
+                  alt="Gallery image 7"
+                  className="gallery__img"
+                />
               </figure>
               <figure className="gallery__item gallery__item--8">
-                <img src={house8} alt="Gallery image 8" className="gallery__img"/>
+                <img
+                  src={house8}
+                  alt="Gallery image 8"
+                  className="gallery__img"
+                />
               </figure>
               <figure className="gallery__item gallery__item--9">
-                <img src={house9} alt="Gallery image 9" className="gallery__img"/>
+                <img
+                  src={house9}
+                  alt="Gallery image 9"
+                  className="gallery__img"
+                />
               </figure>
               <figure className="gallery__item gallery__item--10">
-                <img src={house10} alt="Gallery image 10" className="gallery__img"/>
+                <img
+                  src={house10}
+                  alt="Gallery image 10"
+                  className="gallery__img"
+                />
               </figure>
               <figure className="gallery__item gallery__item--11">
-                <img src={house11} alt="Gallery image 11" className="gallery__img"/>
+                <img
+                  src={house11}
+                  alt="Gallery image 11"
+                  className="gallery__img"
+                />
               </figure>
               <figure className="gallery__item gallery__item--12">
-                <img src={house12} alt="Gallery image 12" className="gallery__img"/>
+                <img
+                  src={house12}
+                  alt="Gallery image 12"
+                  className="gallery__img"
+                />
               </figure>
               <figure className="gallery__item gallery__item--13">
-                <img src={house13} alt="Gallery image 13" className="gallery__img"/>
+                <img
+                  src={house13}
+                  alt="Gallery image 13"
+                  className="gallery__img"
+                />
               </figure>
               <figure className="gallery__item gallery__item--14">
-                <img src={house14} alt="Gallery image 14" className="gallery__img"/>
+                <img
+                  src={house14}
+                  alt="Gallery image 14"
+                  className="gallery__img"
+                />
               </figure>
             </section>
 
             <footer className="footer">
               <ul className="nav">
-                <li className="nav__item"><a href="#" className="nav__link">Find your dream home 1</a></li>
-                <li className="nav__item"><a href="#" className="nav__link">Find your dream home 2</a></li>
-                <li className="nav__item"><a href="#" className="nav__link">Find your dream home 3</a></li>
-                <li className="nav__item"><a href="#" className="nav__link">Find your dream home 4</a></li>
-                <li className="nav__item"><a href="#" className="nav__link">Find your dream home 5</a></li>
+                <li className="nav__item">
+                  <a href="#" className="nav__link">
+                    Find your dream home 1
+                  </a>
+                </li>
+                <li className="nav__item">
+                  <a href="#" className="nav__link">
+                    Find your dream home 2
+                  </a>
+                </li>
+                <li className="nav__item">
+                  <a href="#" className="nav__link">
+                    Find your dream home 3
+                  </a>
+                </li>
+                <li className="nav__item">
+                  <a href="#" className="nav__link">
+                    Find your dream home 4
+                  </a>
+                </li>
+                <li className="nav__item">
+                  <a href="#" className="nav__link">
+                    Find your dream home 5
+                  </a>
+                </li>
               </ul>
-              <p className="copyright">
-                &copy; Copyright 2020 by aftoflBig5
-              </p>
+              <p className="copyright">&copy; Copyright 2020 by aftoflBig5</p>
             </footer>
             {/* <Header />
             <Route exact path="/"   component={Landing} />

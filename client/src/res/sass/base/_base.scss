@@ -14,9 +14,9 @@ html {
     
     // Default CSS: 1200px < viewport width < 1600px
 
-    // @include respond(large-2) {
-    //     font-size: 56.25%; /* 9px */
-    // }
+    @include respond(large-1) {
+        font-size: 50%; /* 8px */
+    }
 
     // @include respond(medium-2) {
     //     font-size: 50%; /* 8px */
