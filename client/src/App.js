@@ -116,7 +116,7 @@ class App extends Component {
               </div>
             </section>
 
-            <section className="features-2">
+            <section className="features-2 u-margin-bottom-medium">
               
               <div className="feature-2">
                 <svg className="feature-2__icon">
